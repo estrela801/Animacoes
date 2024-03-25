@@ -1,0 +1,61 @@
+body{
+    border: 1px solid green;
+}
+#a {
+
+    border:25px solid black;
+    background-color: blue;
+    height: 10px;
+    width: 30px;
+    animation: a 1s ease alternate infinite;
+}
+#a:hover{
+    animation-play-state: paused;
+}
+@keyframes a {
+  from {
+    transform: translateX(30px);
+  }
+
+  to {
+    transform: translateX(calc(100vw - 100px));
+  }
+}
+#teste {
+  width: 70px;
+  height: 70px;
+
+  border: 5px solid black;
+  border-top-color: transparent;
+  margin: 100px  auto;
+  animation: teste 1s linear infinite;
+  border-radius: 50%;
+}
+#teste:hover{
+    animation-play-state: paused;
+}
+@keyframes teste {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#quadrado{
+    width: 70px;
+    height: 90px;
+    background-color: black;
+    margin: 50px auto;
+    animation: a 10s linear infinite;
+    
+}
+#quadrado:hover{
+    animation-play-state: paused;
+}
+@keyframes quadrado {
+    from{
+        transform: translateX();
+        opacity: 0;
+    }
+    to{
+        transform: translateX();
+    }
+}
