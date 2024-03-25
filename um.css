@@ -1,0 +1,54 @@
+html {
+    background-image: url("https://imgs.search.brave.com/PTtsEOGsXYw4PTZGyEs932mx5H_MoC-Nq2h9x8P0t9I/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NjgwMzMyOC9wdC92/ZXRvcmlhbC9tb3Vu/dGFpbnMtbGFuZHNj/YXBlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1GRTdoMmwt/dnJfbE9vcHBUaldR/S1dUZTY5ODM5UVNO/ODdDRDV0MWl5SElr/PQ");
+}
+
+body {
+    border: 3px solid rgb(0, 0, 58);
+    height: 500px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+
+#img {
+    width: 50px;
+    animation: fly 4s linear infinite alternate-reverse;
+    
+   
+}
+#img:hover{
+    animation-play-state: paused;
+}
+
+
+@keyframes fly {
+    100% {
+        transform: translateX(calc(100vw - 70px));
+    }
+}
+
+
+
+
+
+
+/*.box{
+    background-color:  blue;
+    height: 300px;
+    width: 300px;
+  
+  
+    transition-property: background-color, border-radius;
+    transition-duration: 2s, 2s;
+     transition-delay: 1s;
+    transition-timing-function: cubic-bezier(.15, .89, .85, .26); 
+  } */
+
+/* .box:hover{
+    background-color: red;
+    border-radius: 50%;
+  } */
