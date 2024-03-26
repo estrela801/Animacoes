@@ -1,5 +1,6 @@
 body{
     border: 1px solid green;
+    
 }
 #a {
 
@@ -14,7 +15,7 @@ body{
 }
 @keyframes a {
   from {
-    transform: translateX(30px);
+    transform: translateX(10px);
   }
 
   to {
@@ -42,20 +43,77 @@ body{
 #quadrado{
     width: 70px;
     height: 90px;
-    background-color: black;
-    margin: 50px auto;
-    animation: a 10s linear infinite;
-    
+    background-color: rgb(24, 0, 0);
+    /* margin: 50px auto; */
+    animation: quadrado 4s linear infinite;
+    border: 10px solid red;
 }
 #quadrado:hover{
     animation-play-state: paused;
+    opacity:0.1;
 }
 @keyframes quadrado {
-    from{
-        transform: translateX();
-        opacity: 0;
-    }
-    to{
-        transform: translateX();
-    }
+  /* from{
+    transform: translateX()-600px;
+  } */
+
+  to{
+    transform: translateX(calc(100vw - 78px));
+  }
+}
+
+#quadrado2{
+  width: 70px;
+  height: 90px;
+  background-color: rgb(12, 0, 240);
+  /* margin: 50px auto; */
+  animation: quadrado2 4s alternate infinite;
+  border: 10px solid rgb(4, 255, 0);
+}
+  #quadrado2:hover{
+    animation-play-state: paused;
+    transform:  scale(5) translateX(300px);
+  }
+@keyframes quadrado2 {
+  /* from{
+    transform: translateX()-600px;
+  } */
+
+  to{
+    transform: translateY(calc(-42vw - -78px));
+  }
+}
+
+#circulo{
+  width: 70px;
+  height: 90px;
+  background-color: rgb(0, 0, 0);
+  /* margin: 50px auto; */
+  animation: circulo 4s  infinite;
+  border: 10px solid rgb(4, 255, 0);
+  border-radius: 50%;
+  margin-left: 50px;
+  position: absolute;
+  right: 300px;
+  bottom: 300px;
+}
+#circulo:hover{
+  animation-play-state: paused;
+}
+@keyframes circulo {
+  0%{
+    transform:translateX(-100px);
+  }
+  25%{
+    transform: translateY(-100px);
+  }
+  50%{
+    transform:translateX(100px);
+  }
+  75%{
+    transform:translateY(100px);
+  }
+  100%{
+    transform: translateX(-100px);
+  }
 }
